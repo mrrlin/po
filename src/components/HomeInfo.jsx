@@ -13,12 +13,17 @@ const InfoBox = ({ text, link, btnText }) => (
 
 const renderContent = {
   1: (
-    <h1 className="sm:text-xl sm:leading-snug text-center 
-      neo-brutalism-blue py-4 px-8 text-white mx-5">
-      Hi, I am <span className="font-semibold">Angelina</span>👋
-      <br />
-      A Frontend Developer from Russia
-    </h1>
+    <InfoBox 
+      text="Some text3"
+      link="/contact"
+      btnText="Let's talk"
+    />
+    // <h1 className="sm:text-xl sm:leading-snug text-center 
+    //   neo-brutalism-blue py-4 px-8 text-white mx-5">
+    //   Hi, I am <span className="font-semibold">Angelina</span>👋
+    //   <br />
+    //   A Frontend Developer from Russia
+    // </h1>
   ),
   2: (
     <InfoBox 
@@ -30,14 +35,14 @@ const renderContent = {
   3: (
     <InfoBox 
       text="Some text2"
-      link="/about"
+      link="/portfolio"
       btnText="Visit my portfolio"
     />
   ),
   4: (
     <InfoBox 
       text="Some text3"
-      link="/about"
+      link="/contact"
       btnText="Let's talk"
     />
   ),
